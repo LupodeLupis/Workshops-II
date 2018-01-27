@@ -1,9 +1,9 @@
 /*
 Name:ALBERTO LAURENZI
-Student number:150954162
-Email:alaurenzi@myseneca.ca
+Student number:
+Email
 Assignment: WorkshopHome1
-Section:A
+Section:
 Due date:09/20/2017 11:59
 */
 #ifndef NAMESPACE_GRAPH_H
