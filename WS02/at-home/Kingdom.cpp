@@ -4,8 +4,8 @@
 // Version 1.0
 // Date 09/26/2017
 // Student: ALBERTO LAURENZI
-// ID:150954162
-// email:alaurenzi@myseneca.ca
+// ID
+// email:
 // Description :practice in allocating and deallocating dynamic memory
 ///////////////////////////////////////////////////////////
 ***********************************************************/
