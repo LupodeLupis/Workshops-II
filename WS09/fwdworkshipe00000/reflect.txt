@@ -1,0 +1,10 @@
+1. It gives  "unresolved external symbol" error and fails to compile.
+   It compiles well in header.
+
+2. The template should place before main() function to perform properly.
+
+3. If I did not use template, I need to define same logic for all different type.
+   Template reduces duplication of same logic by replace type of function.
+
+4. In this workshop, it does not show any differences either i use <class t> or <typename t>
+   I cannot assure they are equivlent.

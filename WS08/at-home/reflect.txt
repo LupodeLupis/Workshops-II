@@ -1,0 +1,39 @@
+1.What is the difference between an abstract base class and a concrete class?
+    While in an abstract class it is not possible to create instantiation the concrete class allow to creat object, initialize and destroy them.
+    The abstract class has,  or inherits at least one pure virtual function which is declared in a header file and it is initialized to zero. 
+    The concrete class is built on data member and member function which are declared in a header file and defined in an implementation file(.cpp)
+
+2.  Identify the functions that shadow functions of the same name in your solution?
+    Account::credit(temp_balance);
+    (Account::credit(add_amnt));
+    (Account::debit(this->trans_fee));
+    
+3. Explain what have you learned in this workshop.
+    In this workshop, I had the opportunity to go through again the concept of inheritance between the base and the derived class,  to deal with abstract classes developing the notion of the polymorphism through the uses array of pointers and to understand the efficiency and utility of member functions between classes. Moreover, having used 8 different files divided between .cpp and header file 
+    has increased the attention and peculiarity to work with the modular program such C++.
+
+
+Quiz Reflection n°9
+
+
+
+void readFile()
+{
+    ifstream file;
+	if(file.is_open()){
+    file.open("students.txt");
+    int count = 0;
+    file >> count;
+    Student* students = new Student[count];
+    int i = 0 ;
+    while ( i < count)
+    {
+        file>> students[i].m_firstName;
+        file>> students[i].m_lastName;
+        file>> students[i].m_age;
+    }
+    i++;
+}
+    file.close();
+}  
+

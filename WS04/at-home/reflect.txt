@@ -1,0 +1,74 @@
+1)    What is a safe empty state? Could you define another state as the safe empty state?
+   	 An empty safe state is used to prevent to send invalid data to object's instance variables by initializing them to zero and nullptr through the default Construct.
+    	The definition of the default Construct in the .cpp file must include the initialization of the data member as safe empty state and it is mandatory when a class is defined.
+    	While the default construct can be overloaded, it is not possible to define another state as the safe empty state.
+    
+
+2)    Describe how you have minimized code duplication.
+    	The default constructor has been used to minimize the duplication data when is the time to set the data member as an empty state. Also, using the syntax of the current object (this) implied the efficiency of repeating the same instructions more than what it was necessary. Set the current object equal to the default Construct has avoided duplicating the code.
+   	 The example can be found in the definition of the Construct with two parameters and in that one with five parameters.
+    
+3)    Explain why the canTravelWith(...) member function can access the private data of the object referenced in its parameter.
+    	Because the type of the canTravelWith's parameter is a reference to the current object, it is possible to access the instance variables.
+    	When we create a reference, we create an alias for a variable or object, from that moment on, the reference acts as an alternative name for the variable or object and anything we do to the reference is done to the variable/object. 
+
+
+4)    What statement do you need to add to ensure that the strncpy(...) function executes correctly?
+    	I had to assign the last index of  the string's size length the data member,  which in this case is the Destination parameter,  the value of the null determinator '\0'.
+    	destinationString[MAXLENGHT -1] = '\0'.
+
+5)    Explain what you have learned in this workshop.
+    	What I learned in this workshop was how to manage data that it comes from the client code, how I can access the data member and how to 
+    	avoid the duplication of the code.
+    	At the begin, using default construct and default construct with parameters I was able to set the data member in the safe empty state and check if the data to be stored was valid or not.
+    	Moreover, I used the reference operator in order to access the data member and lastly I used the keyword "this" to avoid code duplication.
+
+
+Quiz  4 reflection (in class)
+
+1_Wrong) The member operator can be used to avoid the duplication of the logic, for example if we call a prefix function inside a postfix function.
+
+1_Correct) Members operators are used  to overload operation within a class definition. The member operator allow to use unary ( +, - , * /), binary ( +=, = , -= )and ternary( a>b? true:false) operator in oder to manipulated value related to 
+instance variables of an object, hence the object itself. The operation overloaded, changes the value of the left operand which is alway the current object.
+
+Quiz 5 reflection ( in lab)
+
+default value of construct Parameter : solved
+definition of Decontruct : solved
+	
+// header file:
+#ifndef QUIZ05_VIDEOGAME_H
+#define  QUIZ05_VIDEOGAME_H
+
+namespace quiz5{
+
+class videoGame{
+char* name;
+int size;
+
+public:
+videoGame();
+videoGame(char name, int nameOne  = 10);
+~ videoGame ();
+};
+
+}
+#endif
+
+// cpp.file
+#include "videoGame.h"
+
+using namespace quiz5{
+videoGame:: videoGame(){
+
+name = nullptr;
+size = 0;
+
+}
+videoGame:: videoGame(char name, int nameOne  = 10){};
+videoGame:: ~videoGame{
+
+delete [] name;
+
+}
+}

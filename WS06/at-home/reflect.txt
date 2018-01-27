@@ -1,0 +1,36 @@
+1)	Explain why the copy assignment operator checks for self-assignment before doing anything else.	
+	The copy assignment check if any previous object of the same type exists in the program. This prevent to copy resources in an object that might cointain
+	data and has memory allocated.	
+
+2)	How did you avoid duplication of code?
+	I introduced a member function as private in order to validate the phone number and call the function when it was necessary without interfere with the main.cpp file.
+
+3)	List what you have learned in completing this workshop
+	- Definition and syntax of copy costruct and assignment oerator
+	- Direct call method  for copy construct and assigment opearator
+	- Review  of utilization fuction as private member in order to avoid duplication of code and without interfere with the source code
+	- Review modulus
+
+Quiz 6 Reflection. 
+
+Error: the member function were incoherent with the class name.
+
+// vector.h
+#ifndef MATH_VECTOR_H
+#define MATH_VECTOR_H
+
+namespace math{
+ class Vector{
+ 
+ double* p_sum;
+ int count;
+
+ public:
+ 
+ Vector(int num);
+ Vector(const Vector&);
+ ~Vector(); 
+  Vector operator+(const Vector& number) const; 
+ };  
+} // sict namespcae
+#endif

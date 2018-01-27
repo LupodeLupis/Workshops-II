@@ -1,0 +1,29 @@
+1)	Why do you need to allocate new dynamic memory when you increase the size of an existing array of dynamically allocated memory?
+	
+	 Initializing an array with a size that is unknow at the creation-time it can be a waste of memory. Through the method of dynamic memory usage
+	 is possible to avoid this problem allocating the space that is necessary at the run time. 
+	 Since the memory of the array has been allocated dinamically it cannot be increased statically. That is why it is necessary to create a new array  with a bigger size dinamically.
+	 Once this process is done using a new pointer,  the old data is copied into the new array and a new spot in the new array is available to receive more data from the user.
+
+2)	The Kingdom structure stores the name in an array of characters. At the end of the program, we do not use the delete operator to deallocate the memory occupied by the name. 
+	Do we have a memory leak there? Explain
+
+	The instance variable  char m_population  is a pointer allocated in the static memory with a specif data that it is defined and it will not change; therefore, 
+	the IDE will deallocate memory automatically. As a result, the application will be  prevented by having memory leak.
+.	
+3)	There are two display(...) functions. How does the compiler know which one should be called from your main function? 
+	One of the two function is an Overloaded function which differs from the other one from its signature. The signature of the function allow the compiler to 
+	recognize which one should be called and in our case  the difference is in the number of the parameters.
+	The compiler also rename the overload function automatically following a sequence of combinations. This process is called mangling.
+
+4)	Explain what have you have learned in this workshop.
+	In this workshop i learned how to allocate and deallocate dinamic memory using array. 
+	I have also leart how to deal with overloading function and reinforced the concept of working with modules.
+
+
+
+Quiz 2 Reflection:
+
+- DEFAULT CONSTRUCTION - 
+
+We can prevent the use of the default construction when we add one more construction in the same class definition that include parameters on it.

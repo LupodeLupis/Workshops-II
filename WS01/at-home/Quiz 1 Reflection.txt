@@ -1,0 +1,27 @@
+1.	What is a namespace? Explain its purpose.
+	A namespace reflects the concept of encapsulation of  the C++ langauge and it collects definitions and declariations of variables, where the data is stored,  and functions which make the logic works.
+	The purpose of using namespace is to avoid collision and ambiguity between attributes. It can also be said that  allows lo localize and solve a problem quicker because of its high readability. 
+	The namespace has a option which is called "using" that goes in front of it and its scope is fundamental if there are many namespaces to be used through the surce code.
+
+2.	Why are header files needed? Explain.
+	Because C++ language is a modular program the headers file are more likely to be used often  in contrast of C language which is designed with the use of library. 
+	An header file can be created by the developer or directly by the IDE compiler and its extention is .h
+	Header files are necessary because they allow to create a structure dived in different sections where each section has its own source code. In a header file it should be enclosed:
+	1) definition of function prototype;
+	2) declaration of function
+	3) pre-processor directives.
+	Heder file an implementation file (.cpp extention files ) are interdependent and most important a header file can be used for the implementation of many more programams.
+
+3.	In the instructions above, you were directed to compile only .cpp files but not the .h files. Explain why you should never compile header files.
+	In C++ language is indispendable to include the header file in the implementation file (.ccp extention). Linking the two files the pre-processor allow the headet file to be processed with the implementation file.
+	
+ 4.	Explain why you should never include .cpp files in another file.
+	If we considered a project with a seneGraph.cpp file embadded of million of line plus one more .cpp file filled with the same size of lines, and  we join them together, probabily all the job done until that point has gone.
+	Moreover, if a tiny implementation has to be done, once the .cpp files has became one,  the risk to lose 4 hours of time  to solve a 1 minute problem is high.
+	
+
+5.	Explain in your own words what have you learned on this workshop.
+	What I learned in this worksshop is the fundamental of the C++ as a modular language and the principle of encapsulation. Splitting one compilation unit into  layer of implementation file and creating new header file,
+	 has been a interesting practise to combinewith the theory learned during the class. 
+	In more details I have learned how the header is included in a .cpp file, their connectivity,  and the most important  the concept how to work with different modules that can be interchangeble
+	and more easy to manage.

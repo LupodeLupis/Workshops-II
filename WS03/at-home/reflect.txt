@@ -1,0 +1,17 @@
+1)	What is the size of each C-style character string that stores a family or given name for the account? Why?
+
+	The size of the of the C-style character is the length of the string given +1 which  refers to the Null terminator.
+	When we allocate memory for a char pointer, the size of the array can be found trough the "strlen" function which allow to know the
+	memory  needed at the run time. 
+	Defining the Family name and Given name as pointer as implicit member we don't know exactley the memory that will occur to store data at the begin
+	of the program.
+
+2)	Your class declares two member functions named set(...).  In C, this would generate an error.  Explain why C++ allows this.
+
+	The C++ language recognize the member function through its signature which define if a function is overloaded or not
+	Even though the name of two functios can be the same the important is to definie different parameters
+
+
+3)	What have you learned during this workshop?
+	During this workshop I dealt again with  the dynamic memory and how to declare the construct and deconstruct
+	Also, I did a great review of the modulus operator.
