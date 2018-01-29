@@ -4,8 +4,8 @@
 // Version 1.0
 // Date 10/05/2017
 // Student: ALBERTO LAURENZI
-// ID:150954162
-// email:alaurenzi@myseneca.ca
+// ID:
+// email:
 // Description: Constructor default and with parameters
 ///////////////////////////////////////////////////////////
 ***********************************************************/
