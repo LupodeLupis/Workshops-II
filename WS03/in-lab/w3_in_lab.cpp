@@ -1,19 +1,3 @@
-/**********************************************************
-// Workshop 3: Classes and Privacy
-// w3_in_lab.cpp
-// Version 2.0
-// 2017/09/09
-// Chris Szalwinski
-// Description
-// This workshop demonstrates classes in C++ and 
-// how member variables are defined privately, but 
-// accessed through public member functions
-//
-// Revision History
-///////////////////////////////////////////////////////////
-// Name			Date		                         Reason
-///////////////////////////////////////////////////////////
-**********************************************************/
 
 #include <iostream>
 #include "CRA_Account.h"
