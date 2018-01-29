@@ -4,7 +4,7 @@
 // Version 2.0
 // Date:2017/09/28
 // Name:Alberto Laurenzi
-// email:alaurenzi@myseneca.ca
+// email:
 // Description
 // This workshop demonstrates classes in C++ and
 // how member variables are defined privately, but
