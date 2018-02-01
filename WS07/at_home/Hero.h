@@ -4,8 +4,8 @@
 // Version 1.0
 // Date 12/12/2017
 // Student: ALBERTO LAURENZI
-// ID:150954162
-// email:alaurenzi@myseneca.ca
+// ID:
+// email:
 // Description: Derived Class and I/O
 ///////////////////////////////////////////////////////////
 ***********************************************************/
