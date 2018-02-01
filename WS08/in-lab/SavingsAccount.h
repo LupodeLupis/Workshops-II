@@ -4,8 +4,8 @@
 // Version 1.0
 // Date 12/15/2017
 // Student: ALBERTO LAURENZI
-// ID:150954162
-// email:alaurenzi@myseneca.ca
+// ID:
+// email:
 // Description: Virtual Functions and Abstract Base Classes
 ///////////////////////////////////////////////////////////
 ***********************************************************/
