@@ -2,7 +2,7 @@
 // File: Data.h
 // Version: 2.0
 // Date: 2017/12/15
-// Author: Chris Szalwinski, based on previous work by Hasan Murtaza
+// Author: 
 // Description:
 // This file defines the templated functions and the answers prototype
 ///////////////////////////////////////////////////
